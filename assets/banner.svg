@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="240" viewBox="0 0 880 240">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0e14"/>
+      <stop offset="0.55" stop-color="#0d1420"/>
+      <stop offset="1" stop-color="#0a1018"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#1b2735" stroke-width="0.6"/>
+    </pattern>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0df250" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#0df250" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#0df250" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glowG" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowC" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="880" height="240" fill="url(#bg)"/>
+  <rect width="880" height="240" fill="url(#grid)"/>
+  <rect id="scanRect" width="880" height="46" fill="url(#scan)">
+    <animate attributeName="y" from="-46" to="240" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- corner brackets -->
+  <g stroke="#0df250" stroke-width="1.6" fill="none" opacity="0.85">
+    <path d="M14 26V14h12"/>
+    <path d="M854 14h12v12"/>
+    <path d="M866 214v12h-12"/>
+    <path d="M26 226H14v-12"/>
+  </g>
+
+  <!-- terminal window -->
+  <g>
+    <rect x="40" y="42" width="560" height="156" rx="10" fill="#0b1017" stroke="#22303f" stroke-width="1.2"/>
+    <rect x="40" y="42" width="560" height="30" rx="10" fill="#111823"/>
+    <line x1="40" y1="72" x2="600" y2="72" stroke="#22303f" stroke-width="1"/>
+    <circle cx="62" cy="57" r="5" fill="#ff5f56"/>
+    <circle cx="80" cy="57" r="5" fill="#ffbd2e"/>
+    <circle cx="98" cy="57" r="5" fill="#27c93f"/>
+    <text x="320" y="61" text-anchor="middle" font-family="Consolas,monospace" font-size="11" fill="#5b6b7c">root@jdck-tools: ~/ck</text>
+
+    <g font-family="Consolas,'Courier New',monospace" font-size="14">
+      <text x="60" y="98" fill="#29b9d6" filter="url(#glowC)">$ jdck --init</text>
+      <text x="60" y="122" fill="#8b98a5">[<tspan fill="#0df250" filter="url(#glowG)">OK</tspan>] pt_key / pt_pin 提取成功</text>
+      <text x="60" y="146" fill="#8b98a5">[<tspan fill="#0df250" filter="url(#glowG)">OK</tspan>] 已推送至青龙面板 · JD_COOKIE</text>
+      <text x="60" y="170" fill="#8b98a5">[<tspan fill="#ffbd2e">··</tspan>] 脚本仓库同步中 · 20+ tasks</text>
+      <text x="60" y="190" fill="#29b9d6" filter="url(#glowC)">$ status:</text>
+      <text x="150" y="190" fill="#0df250" filter="url(#glowG)">RUNNING</text>
+      <rect x="228" y="178" width="9" height="15" fill="#0df250" filter="url(#glowG)">
+        <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+
+  <!-- right title block -->
+  <g text-anchor="middle">
+    <text x="728" y="92" font-family="'Segoe UI',Arial,sans-serif" font-size="30" font-weight="700" fill="#e6edf3" filter="url(#glowC)">京东 CK 工具集</text>
+    <text x="728" y="120" font-family="Consolas,monospace" font-size="12.5" fill="#29b9d6" letter-spacing="1.5">JD COOKIE TOOLKIT</text>
+    <line x1="628" y1="136" x2="828" y2="136" stroke="#0df250" stroke-width="1" opacity="0.6"/>
+    <text x="728" y="160" font-family="Consolas,monospace" font-size="12" fill="#8b98a5">提取 ▸ 校验 ▸ 上传青龙</text>
+    <text x="728" y="184" font-family="Consolas,monospace" font-size="11" fill="#39424e">// 学 习 交 流 · 风 险 自 担</text>
+  </g>
+</svg>
