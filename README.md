@@ -1,14 +1,14 @@
 <div align="center">
 
-# 京东 CK 工具集
+<img src="assets/banner.svg" alt="京东 CK 工具集" width="880"/>
 
-**三个配套的京东 Cookie 工具 · 一站式提取 → 校验 → 上传青龙**
+**三个配套的京东 Cookie 工具 · 一站式 `提取 ▸ 校验 ▸ 上传青龙`**
 
-[![Releases](https://img.shields.io/badge/下载-Releases-2ea44f?logo=github)](https://github.com/qq329192/jd-ck-tools/releases)
-[![豆豆管家](https://img.shields.io/badge/豆豆管家-v1.33.0-blue)](https://github.com/qq329192/jd-ck-tools/releases/tag/lsp-v1.33.0)
-[![JdCkCapture](https://img.shields.io/badge/JdCkCapture-v1.10.2-orange)](https://github.com/qq329192/jd-ck-tools/releases/tag/capture-v1.10.2)
-[![JdQlPush](https://img.shields.io/badge/JdQlPush-v1.0.0-yellow)](https://github.com/qq329192/jd-ck-tools/releases/tag/push-v1.0.0)
-[![License](https://img.shields.io/badge/用途-学习交流-red)](#-重要提醒)
+[![Releases](https://img.shields.io/badge/下载-Releases-2ea44f?logo=github&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases)
+[![豆豆管家](https://img.shields.io/badge/豆豆管家-v1.33.0-0df250?labelColor=0d1420&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases/tag/lsp-v1.33.0)
+[![JdCkCapture](https://img.shields.io/badge/JdCkCapture-v1.10.2-29b9d6?labelColor=0d1420&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases/tag/capture-v1.10.2)
+[![JdQlPush](https://img.shields.io/badge/JdQlPush-v1.0.0-ffbd2e?labelColor=0d1420&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases/tag/push-v1.0.0)
+[![License](https://img.shields.io/badge/用途-学习交流-e1251b?labelColor=0d1420&style=flat-square)](#️-重要提醒)
 
 </div>
 
@@ -36,9 +36,12 @@
 
 三个 App 启动时会静默查询本仓库的 Releases API：
 
-1. 按 tag 前缀过滤出自己的版本序列（如 `lsp-v1.33.0`）
-2. 与当前 `versionName` 做版本比较（能正确区分正式版与 beta）
-3. 有新版 → 弹窗提示，点「去下载」跳转 APK 直链
+```bash
+# 更新器工作流（伪代码）
+filter  releases by tag_prefix        # 如 lsp-v1.33.0
+compare versionName vs latest         # 正式版 / beta 精确分序
+notify  → 弹窗「发现新版本」→ APK 直链
+```
 
 只要在 GitHub 上发新 Release，手机端下次打开就会收到提醒。
 
@@ -49,7 +52,7 @@
 ## 💡 使用提示
 
 <details open>
-<summary><b>豆豆管家（JdCookieLsp）</b></summary>
+<summary><b>🟢 豆豆管家（JdCookieLsp）</b></summary>
 
 - **root 用户**：LSPosed 勾选模块 + 作用域选京东，强停京东后生效
 - **无 root**：可用 LSPatch 修补京东（内置/便携模式 + 嵌入本模块，签名绕过选 `pm+openat`），或使用 App 内「H5 登录提取」「手动粘贴 Cookie」两条免 root 通道
@@ -58,7 +61,7 @@
 </details>
 
 <details>
-<summary><b>JdCkCapture</b></summary>
+<summary><b>🔵 JdCkCapture</b></summary>
 
 - 首次使用需安装其生成的 CA 证书（应用内引导）
 - Android 14+ 系统证书需 root 推入系统证书目录，普通用户证书可抓大部分流量
@@ -66,11 +69,18 @@
 </details>
 
 <details>
-<summary><b>通用</b></summary>
+<summary><b>🟡 通用</b></summary>
 
 - 三个 App 抓取的 CK 格式统一为 `pt_key=xxx;pt_pin=xxx;`，可直接用于青龙 `JD_COOKIE`
 
 </details>
+
+## 📊 仓库动态
+
+<div align="center">
+  <img height="150" src="https://github-readme-stats.vercel.app/api?username=qq329192&show_icons=true&bg_color=0d1420&title_color=0df250&icon_color=29b9d6&text_color=8b98a5&hide_border=true&include_all_commits=true&count_private=true"/>
+  <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=qq329192&layout=compact&bg_color=0d1420&title_color=0df250&text_color=8b98a5&hide_border=true&langs_count=6"/>
+</div>
 
 ## ⚠️ 重要提醒
 
@@ -84,6 +94,12 @@
 ---
 
 <div align="center">
+
+```
+┌─────────────────────────────────────────┐
+│  if ( this.repo.helped_you )  star ⭐   │
+└─────────────────────────────────────────┘
+```
 
 **如果这个项目对你有帮助，欢迎点个 ⭐ Star**
 
