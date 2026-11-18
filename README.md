@@ -5,7 +5,7 @@
 **三个配套的京东 Cookie 工具 · 一站式 `提取 ▸ 校验 ▸ 上传青龙`**
 
 [![Releases](https://img.shields.io/badge/下载-Releases-2ea44f?logo=github&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases)
-[![豆豆管家](https://img.shields.io/badge/豆豆管家-v1.39.4-0df250?labelColor=0d1420&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases/tag/lsp-v1.39.4)
+[![豆豆管家](https://img.shields.io/badge/豆豆管家-v1.39.6-0df250?labelColor=0d1420&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases/tag/lsp-v1.39.6)
 [![JdCkCapture](https://img.shields.io/badge/JdCkCapture-v1.10.2-29b9d6?labelColor=0d1420&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases/tag/capture-v1.10.2)
 [![JdQlPush](https://img.shields.io/badge/JdQlPush-v1.0.0-ffbd2e?labelColor=0d1420&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases/tag/push-v1.0.0)
 [![License](https://img.shields.io/badge/用途-学习交流-e1251b?labelColor=0d1420&style=flat-square)](#️-重要提醒)
@@ -28,7 +28,7 @@
 
 | App | 最新版本 | 发布日期 | Tag |
 |---|---|---|---|
-| 豆豆管家 | **v1.39.4** | 2026-11-18 | [`lsp-v1.39.4`](https://github.com/qq329192/jd-ck-tools/releases/tag/lsp-v1.39.4) |
+| 豆豆管家 | **v1.39.6** | 2026-11-18 | [`lsp-v1.39.6`](https://github.com/qq329192/jd-ck-tools/releases/tag/lsp-v1.39.6) |
 | JdCkCapture | v1.10.2 | 2026-10-26 | [`capture-v1.10.2`](https://github.com/qq329192/jd-ck-tools/releases/tag/capture-v1.10.2) |
 | JdQlPush | v1.0.0 | 2026-10-26 | [`push-v1.0.0`](https://github.com/qq329192/jd-ck-tools/releases/tag/push-v1.0.0) |
 
@@ -59,7 +59,7 @@ notify  → 弹窗「发现新版本」→ APK 直链
 - 运行日志支持重复行折叠，点「分享」可一键把日志（自带版本/机型/系统信息）发给开发者反馈问题
 - **桌面小组件**（v1.37+）：长按桌面添加「豆豆管家」——磨砂透明卡显示京东头像/昵称/CK 状态/京豆/**今日获取京豆**；右上角 ↻ 或点头像手动刷新，30 分钟自动刷
 - **多账号管理**：App「账号管理」页可实时查所有账号 CK + 京豆，一键把卡片切到指定账号（单号模式）或恢复全部汇总
-- **指纹同步**（v1.36+）：打开京东页面自动抓 UA/uuid/eid/wg-sdk-token 等写面板 `cache/accounts/<pt_pin>.json`，JDOOK 脚本免手动抓包；「同步策略」页可关
+- **指纹同步**（v1.36+）：打开京东页面自动抓 UA/uuid/eid/wg-sdk-token 等写面板 `cache/accounts/<pt_pin>.json`，JDOOK 脚本免手动抓包；「同步策略」页可关。v1.39.6 起推送改为**字段级合并**：面板上人工校准的字段（金融指纹 `extra.fin_*`、area、坐标等）不会被本机快照冲掉
 
 </details>
 
