@@ -5,7 +5,7 @@
 **三个配套的京东 Cookie 工具 · 一站式 `提取 ▸ 校验 ▸ 上传青龙`**
 
 [![Releases](https://img.shields.io/badge/下载-Releases-2ea44f?logo=github&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases)
-[![豆豆管家](https://img.shields.io/badge/豆豆管家-v1.40.1-0df250?labelColor=0d1420&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases/tag/lsp-v1.40.1)
+[![豆豆管家](https://img.shields.io/badge/豆豆管家-v1.40.2-0df250?labelColor=0d1420&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases/tag/lsp-v1.40.2)
 [![JdCkCapture](https://img.shields.io/badge/JdCkCapture-v1.10.2-29b9d6?labelColor=0d1420&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases/tag/capture-v1.10.2)
 [![JdQlPush](https://img.shields.io/badge/JdQlPush-v1.0.0-ffbd2e?labelColor=0d1420&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases/tag/push-v1.0.0)
 [![License](https://img.shields.io/badge/用途-学习交流-e1251b?labelColor=0d1420&style=flat-square)](#️-重要提醒)
@@ -28,7 +28,7 @@
 
 | App | 最新版本 | 发布日期 | Tag |
 |---|---|---|---|
-| 豆豆管家 | **v1.40.1** | 2026-11-19 | [`lsp-v1.40.1`](https://github.com/qq329192/jd-ck-tools/releases/tag/lsp-v1.40.1) |
+| 豆豆管家 | **v1.40.2** | 2026-11-19 | [`lsp-v1.40.2`](https://github.com/qq329192/jd-ck-tools/releases/tag/lsp-v1.40.2) |
 | JdCkCapture | v1.10.2 | 2026-10-26 | [`capture-v1.10.2`](https://github.com/qq329192/jd-ck-tools/releases/tag/capture-v1.10.2) |
 | JdQlPush | v1.0.0 | 2026-10-26 | [`push-v1.0.0`](https://github.com/qq329192/jd-ck-tools/releases/tag/push-v1.0.0) |
 
