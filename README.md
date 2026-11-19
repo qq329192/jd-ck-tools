@@ -5,7 +5,7 @@
 **三个配套的京东 Cookie 工具 · 一站式 `提取 ▸ 校验 ▸ 上传青龙`**
 
 [![Releases](https://img.shields.io/badge/下载-Releases-2ea44f?logo=github&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases)
-[![豆豆管家](https://img.shields.io/badge/豆豆管家-v1.40.0-0df250?labelColor=0d1420&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases/tag/lsp-v1.40.0)
+[![豆豆管家](https://img.shields.io/badge/豆豆管家-v1.40.1-0df250?labelColor=0d1420&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases/tag/lsp-v1.40.1)
 [![JdCkCapture](https://img.shields.io/badge/JdCkCapture-v1.10.2-29b9d6?labelColor=0d1420&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases/tag/capture-v1.10.2)
 [![JdQlPush](https://img.shields.io/badge/JdQlPush-v1.0.0-ffbd2e?labelColor=0d1420&style=flat-square)](https://github.com/qq329192/jd-ck-tools/releases/tag/push-v1.0.0)
 [![License](https://img.shields.io/badge/用途-学习交流-e1251b?labelColor=0d1420&style=flat-square)](#️-重要提醒)
@@ -28,7 +28,7 @@
 
 | App | 最新版本 | 发布日期 | Tag |
 |---|---|---|---|
-| 豆豆管家 | **v1.40.0** | 2026-11-19 | [`lsp-v1.40.0`](https://github.com/qq329192/jd-ck-tools/releases/tag/lsp-v1.40.0) |
+| 豆豆管家 | **v1.40.1** | 2026-11-19 | [`lsp-v1.40.1`](https://github.com/qq329192/jd-ck-tools/releases/tag/lsp-v1.40.1) |
 | JdCkCapture | v1.10.2 | 2026-10-26 | [`capture-v1.10.2`](https://github.com/qq329192/jd-ck-tools/releases/tag/capture-v1.10.2) |
 | JdQlPush | v1.0.0 | 2026-10-26 | [`push-v1.0.0`](https://github.com/qq329192/jd-ck-tools/releases/tag/push-v1.0.0) |
 
@@ -55,12 +55,13 @@ notify  → 弹窗「发现新版本」→ APK 直链
 <summary><b>🟢 豆豆管家（JdCookieLsp）</b></summary>
 
 - **root 用户**：LSPosed 勾选模块 + 作用域选京东，强停京东后生效
-- **无 root**：可用 LSPatch 修补京东（内置/便携模式 + 嵌入本模块，签名绕过选 `pm+openat`），或使用 App 内「H5 登录提取」「手动粘贴 Cookie」两条免 root 通道
+- **无 root**：可用 LSPatch 修补京东（内置/便携模式 + 嵌入本模块，签名绕过选 `pm+openat`），或使用 App 内「H5 登录提取(App CK)」「网页版 CK 提取(网页 CK)」「手动粘贴 Cookie」三条免 root 通道
 - 运行日志支持重复行折叠，点「分享」可一键把日志（自带版本/机型/系统信息）发给开发者反馈问题
 - **桌面小组件**（v1.37+）：长按桌面添加「豆豆管家」——磨砂透明卡显示京东头像/昵称/CK 状态/京豆/**今日获取京豆**；右上角 ↻ 或点头像手动刷新，30 分钟自动刷
 - **多账号管理**：App「账号管理」页可实时查所有账号 CK + 京豆，一键把卡片切到指定账号（单号模式）或恢复全部汇总
 - **指纹同步**（v1.36+）：打开京东页面自动抓 UA/uuid/eid/wg-sdk-token 等写面板 `cache/accounts/<pt_pin>.json`，JDOOK 脚本免手动抓包；「同步策略」页可关。v1.39.6 起推送改为**字段级合并**：面板上人工校准的字段（金融指纹 `extra.fin_*`、area、坐标等）不会被本机快照冲掉
-- **H5 登录提取**（免 root）：内置 WebView 走 `appid=100` 登录，拿 `app_open…` 开头的 **App CK（pt_key/pt_pin）**，写 `JD_COOKIE`。与模块在京东进程里读到的是同一种，**不是网页版 thor**。v1.39.9 起移除网页 CK 提取入口（WEBJD_COOKIE 需在面板手工填）
+- **H5 登录提取（App CK）**（免 root）：内置 WebView 走 `appid=100` 登录，拿 `app_open…` 开头的 **App CK（pt_key/pt_pin）**，写 `JD_COOKIE`，通用
+- **网页版 CK 提取（网页 CK）**（免 root）：电脑版扫码登录 www.jd.com 拿 **thor**，写 `WEBJD_COOKIE`，仅「网页签到中心」用。两套登录态互不认，别混用。v1.40.1 修复网页 CK 混入 pt_key 导致的「活动火爆」
 - **面板提示**（v1.39.8+）：所有"写入青龙"文案改为按实际配置动态显示「呆呆面板/青龙」，配呆呆不再误显示青龙
 
 </details>
